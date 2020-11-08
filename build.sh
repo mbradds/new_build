@@ -31,14 +31,16 @@ function askUserToUninstall(){
     fi
 }
 
-declare -a packages=("nodejs" "nmp" "qgis" "code" "mssql-server" "sqlite3")
+declare -a packages=("nodejs" "nmp" "git" "qgis" "code" "mssql-server" "sqlite3")
 #force remove any content in the log files
+mkdir -p install_logs
 rm -f ./install_logs/already_installed.txt 
 rm -f ./install_logs/installed.txt 
 rm -f ./install_logs/skipped_install.txt 
 rm -f ./install_logs/uninstalled.txt 
 rm -f ./install_logs/skipped_uninstall.txt 
 
+sudo apt-get update
 for package in "${packages[@]}"; do
     if [ $(dpkg-query -W -f='${Status}' ${package} 2>/dev/null | grep -c "ok installed") -eq 0 ]; then
         askUserToInstall "$package is not installed. Start install? (y/n)" "${package}"
