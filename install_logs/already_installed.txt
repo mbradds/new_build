@@ -1,5 +1,0 @@
-Sat 07 Nov 2020 08:29:22 PM UTC nodejs already installed
-Sat 07 Nov 2020 08:29:22 PM UTC qgis already installed
-Sat 07 Nov 2020 08:29:23 PM UTC code already installed
-Sat 07 Nov 2020 08:29:23 PM UTC mssql-server already installed
-Sat 07 Nov 2020 08:29:23 PM UTC azuredatastudio already installed
