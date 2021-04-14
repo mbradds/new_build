@@ -28,7 +28,7 @@ function askUserAboutPackage(){
     fi
 }
 
-declare -a packages=("nodejs" "npm" "git" "qgis" "code" "mssql-server" "sqlite3" "chrome")
+declare -a packages=("nodejs" "npm" "git" "qgis" "code" "mssql-server" "sqlite3" "chrome" "firefox" "terminator")
 declare -a log_files=("already_installed" "installed" "skipped_install" "uninstalled" "skipped_uninstall")
 mkdir -p install_logs 
 
